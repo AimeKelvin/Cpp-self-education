@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int a = 10;
-    int* a_pointer = &a;
-    cout << "Address of a: " << &a << endl;
-    cout << "Value of a: " << a << endl;
+    int var = 10;
+    int* var_pointer = &var;
+    cout << "Address of a: " << &var << endl;
+    cout << "Value of a: " << *var_pointer << endl;
 }
