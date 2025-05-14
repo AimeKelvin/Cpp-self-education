@@ -8,5 +8,6 @@ cout<<"hey nigga";
 }
 
 int main(){
- cout<<sayhi()<<"watchudoing"
+    sayhi();
+ cout<<"watchudoing";
 }
