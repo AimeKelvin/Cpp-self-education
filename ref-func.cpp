@@ -9,10 +9,14 @@ void xvar(int &x, int &y){
 }
 
 
-int main(){
-int n = 200;
-int m = 320;
-cout << n << " "<< m<<"\n";
-    xvar(n,m);
-cout << n;
+void myFunction(int myNumbers[5]) {
+  for (int i = 0; i < 5; i++) {
+    cout << myNumbers[i] << "\n";
+  }
+}
+
+int main() {
+  int myNumbers[5] = {10, 20, 30, 40, 50};
+  myFunction(myNumbers);
+  return 0;
 }
