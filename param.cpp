@@ -2,10 +2,11 @@
 using namespace std;
 
 
-void sayhi(string fname){
-    cout<< "hello " <<fname<<"\n";
+int sum(int num1, int num2){
+    return num1 + num2;
+    cout<<"\n";
 }
 
 int main(){
-sayhi("Bolivier");
+cout << sum(2,4);
 }
