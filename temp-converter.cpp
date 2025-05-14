@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 float toCelsius(float fahrenheit) {
   return (5.0 / 9.0) * (fahrenheit - 32.0);
 }
