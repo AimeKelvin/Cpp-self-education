@@ -1,27 +1,24 @@
-class Account {
-protected:
-    double balance;
+#include <iostream>
+using namespace std;
 
-public:
-    Account(double b) : balance(b) {}
-
-    void deposit(double amount) {
-        balance += amount;
-    }
-
-    double getBalance() const {
-        return balance;
+// Base class
+class Vehicle {
+  public:
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
     }
 };
 
-class SavingsAccount : public Account {
-private:
-    double interestRate;
-
-public:
-    SavingsAccount(double b, double rate) : Account(b), interestRate(rate) {}
-
-    void addInterest() {
-        balance += balance * interestRate;
-    }
+// Derived class
+class Car: public Vehicle {
+  public:
+    string model = "Mustang";
 };
+
+int main() {
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + " " + myCar.model;
+  return 0;
+}
